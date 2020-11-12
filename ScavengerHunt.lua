@@ -14,6 +14,8 @@ wait(1)
 pcall(function()
 workspace.Map.Structures.Barn.RoofSheeting:Remove()
 workspace.Map.Structures.Barn.Roof:Remove()
+workspace.Map.Structures.Stable.RoofSheeting:Remove()
+workspace.Map.Structures.Stable.Roof:Remove()
 end)
 while wait(0.1) do
 if #workspace.Tokens:GetChildren() ~= 0 then
