@@ -11,8 +11,10 @@ GameplayGui.GuiControl.LockedEmoteMessage.Value = GameplayGui.Popup.ChatBubble.M
 u1.Start();
 u2.DisplayMessage(u3.new(u2.DefaultMessages.Welcome_HuntNov13));
 wait(1)
+pcall(function()
 workspace.Map.Structures.Barn.RoofSheeting:Remove()
 workspace.Map.Structures.Barn.Roof:Remove()
+end)
 while wait(0.1) do
 if #workspace.Tokens:GetChildren() ~= 0 then
 for i,v in pairs(workspace.Tokens:GetChildren()) do
